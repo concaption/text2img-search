@@ -35,12 +35,11 @@ run:
 	streamlit run app.py
 
 # RunAPI: Make the main script executable and run it
-runapi:
+run-api:
 	uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 run-docker:
-	docker build -t multimodal-search . &&\
-		docker run -p 80:80 multimodal-search
+	docker-compose up --build
 
 # All: Run all of the above commands
 all: install lint test format deploy

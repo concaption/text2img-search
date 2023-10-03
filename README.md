@@ -1,6 +1,25 @@
 # Multimodal Search with Haystack: A Step-By-Step Guide
 ![Screenshot](assets/screenshot.png)
 ![API Screenshot](assets/api.png)
+
+## Setup
+
+For streamlit app
+
+```
+make setup
+make run
+```
+For FASTapi
+```
+make run-api
+```
+
+For dockerized API
+```
+make docker-api
+```
+
 ## Introduction
 
 In today's world, data is not limited to text. We have a plethora of multimedia content such as images, audio, and video. Therefore, having a search mechanism that can look into multiple types of media is more useful than ever. In this tutorial, we will focus on creating a multimodal search capability using Haystack's `MultiModalRetriever`. We will be using Python for this tutorial.
@@ -15,9 +34,9 @@ In today's world, data is not limited to text. We have a plethora of multimedia 
 
 Firstly, you'll need to install the Haystack library if you haven't already:
 
-\`\`\`bash
+```bash
 pip install farm-haystack
-\`\`\`
+```
 
 ## Step 2: Import Necessary Modules
 
