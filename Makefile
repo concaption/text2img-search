@@ -36,8 +36,7 @@ run:
 
 # RunAPI: Make the main script executable and run it
 runapi:
-	chmod +x ./main.py &&\
-		./main.py
+	uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 run-docker:
 	docker build -t multimodal-search . &&\

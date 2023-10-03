@@ -9,3 +9,6 @@ nbval==0.10.0
 farm-haystack[inference]==1.21.0
 streamlit==1.27.1
 torch
+fastapi==0.103.2
+pydantic
+uvicorn
